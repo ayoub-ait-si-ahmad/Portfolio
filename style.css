@@ -1,0 +1,78 @@
+/* genral varibale */
+:root {
+  --dark-navy-blue: #164773;
+  --deep-midnight-blue: #0b2b40;
+  --dark-teal: #1e5959;
+  --medium-dark-green: #3b8c6e;
+  --light-mint-green: #89d99d;
+  --white: #ffffff;
+  --black: #171321;
+  --font-size: 1.3rem;
+  /*i need to add fonts*/
+  --font-Fraunces: "Fraunces", serif;
+  --font-Oxygen: "Oxygen", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+}
+/* border box model : i need to read about this*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark-teal);
+  font-family: var(--font-Fraunces);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/* link color and hover  */
+a {
+  color: var(--light-mint-green);
+}
+a:hover {
+  color: var(--medium-dark-green);
+  text-decoration: none;
+}
+/* intro styles */
+#intro {
+  /* nice space between nav and the other section  */
+  padding-bottom: 10rem;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#intro .name {
+  /* i want to change him  */
+  font-family: var(--font-Poppins);
+}
+.name span {
+  font-family: var(--font-Fraunces);
+  font-size: 4rem;
+  color: var(--light-mint-green);
+  display: block;
+}
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+#contact {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  background-color: var(--dark-navy-blue);
+}
+#contact p:last-child {
+  margin-top: 3rem;
+}

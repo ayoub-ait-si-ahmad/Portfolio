@@ -76,3 +76,22 @@ a:hover {
 #contact p:last-child {
   margin-top: 3rem;
 }
+/* NavBar */
+nav {
+  /* font-family: var(--font-Poppins); */
+  font-size: 80%;
+  padding: 1rem;
+}
+nav h1 a {
+  font-family: var(--font-Fraunces);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

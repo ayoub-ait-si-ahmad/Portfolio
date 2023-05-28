@@ -1,4 +1,7 @@
 /* genral varibale */
+* {
+  /* border: solid 1px black; */
+}
 :root {
   --dark-navy-blue: #164773;
   --deep-midnight-blue: #0b2b40;
@@ -86,7 +89,7 @@ nav h1 a {
   font-family: var(--font-Fraunces);
 }
 nav ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -95,3 +98,61 @@ nav ul {
   align-items: center;
   gap: 2rem;
 }
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--deep-midnight-blue);
+}
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--deep-midnight-blue);
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--light-mint-green);
+}
+.button {
+  background-color: var(--dark-navy-blue);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.button:hover {
+  columns: var(--white);
+  background-color: var(--dark-navy-blue);
+}
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+/* styling footer by myself  */
+footer {
+  background-color: var(--medium-dark-green);
+  text-align: center;
+}
+footer li {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/* br {
+  color: var(--white);
+  background-color: var(--white);
+} */

@@ -46,10 +46,16 @@ a:hover {
   color: var(--medium-dark-green);
   text-decoration: none;
 }
+/* background color div  */
+.section-backgroundColor {
+  background-color: var(--medium-dark-green);
+}
 /* intro styles */
 #intro {
   /* nice space between nav and the other section  */
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #intro p {
   font-size: 1rem;
@@ -57,7 +63,7 @@ a:hover {
 }
 #intro .name {
   /* i want to change him  */
-  font-family: var(--font-Poppins);
+  font-family: var(--font-Fraunces);
 }
 .name span {
   font-family: var(--font-Fraunces);
@@ -72,9 +78,9 @@ a:hover {
 #contact {
   padding: 3rem 0;
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
   text-align: center;
-  background-color: var(--dark-navy-blue);
+  /* background-color: var(--dark-navy-blue); */
 }
 #contact p:last-child {
   margin-top: 3rem;
@@ -116,6 +122,7 @@ nav a {
   text-decoration: none;
   display: block;
 }
+
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--light-mint-green);
@@ -124,6 +131,8 @@ nav [class*="fa-"]:hover {
   background-color: var(--dark-navy-blue);
   padding: 0.5rem;
   border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
 }
 .button:hover {
   columns: var(--white);
@@ -142,17 +151,27 @@ nav [class*="fa-"]:hover {
 }
 /* styling footer by myself  */
 footer {
-  background-color: var(--medium-dark-green);
   text-align: center;
+  padding: 4rem 0;
 }
-footer li {
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
   display: flex;
-
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
 }
-/* br {
-  color: var(--white);
-  background-color: var(--white);
-} */
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}

@@ -8,6 +8,7 @@
   --dark-teal: #1e5959;
   --medium-dark-green: #3b8c6e;
   --light-mint-green: #89d99d;
+  --orange: #f29325;
   --white: #ffffff;
   --black: #171321;
   --font-size: 1.3rem;
@@ -50,6 +51,15 @@ a:hover {
 .section-backgroundColor {
   background-color: var(--medium-dark-green);
 }
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(95, 163, 142, 1) 25%,
+    rgba(132, 210, 155, 1) 45%,
+    rgba(22, 71, 115, 1) 74%
+  );
+  height: 2px;
+}
 /* intro styles */
 #intro {
   /* nice space between nav and the other section  */
@@ -68,7 +78,7 @@ a:hover {
 .name span {
   font-family: var(--font-Fraunces);
   font-size: 4rem;
-  color: var(--light-mint-green);
+  color: var(--deep-midnight-blue);
   display: block;
 }
 #intro h2 {
@@ -78,7 +88,7 @@ a:hover {
 #contact {
   padding: 3rem 0;
   margin: 0 auto;
-  width: 500px;
+  width: 400px;
   text-align: center;
   /* background-color: var(--dark-navy-blue); */
 }
@@ -128,7 +138,7 @@ nav [class*="fa-"]:hover {
   color: var(--light-mint-green);
 }
 .button {
-  background-color: var(--dark-navy-blue);
+  background-color: var(--orange);
   padding: 0.5rem;
   border-radius: 5px;
   color: var(--white);
